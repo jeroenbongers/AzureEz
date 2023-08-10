@@ -1,6 +1,4 @@
-﻿using Azure.Messaging.ServiceBus;
-
-namespace AzureEz.ServiceBus.Infrastructure.Interfaces;
+﻿namespace AzureEz.ServiceBus.Infrastructure.Interfaces;
 
 public interface IServiceBusFactory
 {

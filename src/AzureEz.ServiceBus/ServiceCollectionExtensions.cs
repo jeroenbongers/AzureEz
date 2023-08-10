@@ -1,5 +1,7 @@
 ﻿using AzureEz.ServiceBus.Infrastructure;
 using AzureEz.ServiceBus.Infrastructure.Interfaces;
+using AzureEz.ServiceBus.Services;
+using AzureEz.ServiceBus.Services.Interfaces;
 using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +21,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddAzureClients(builder => builder.AddServiceBusClient(configuration));
         services.AddSingleton<IServiceBusFactory, ServiceBusFactory>();
+        services.AddScoped<IServiceBusService, ServiceBusService>();
         
         return services;
     }

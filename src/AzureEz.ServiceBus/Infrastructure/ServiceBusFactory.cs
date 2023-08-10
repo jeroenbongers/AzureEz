@@ -1,5 +1,4 @@
 ﻿using System.Collections.Concurrent;
-using Azure.Messaging.ServiceBus;
 using AzureEz.ServiceBus.Infrastructure.Interfaces;
 
 namespace AzureEz.ServiceBus.Infrastructure;
