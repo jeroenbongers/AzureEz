@@ -28,7 +28,8 @@ public class ServiceBusService : IServiceBusService
             serviceBusMessage.ScheduledEnqueueTime = DateTimeOffset.UtcNow.Add(delay.Value);
         }
 
-        await _serviceBusFactory.GetServiceBusSender(queueOrTopicName).SendMessageAsync(serviceBusMessage, cancellationToken);
+        var sender = _serviceBusFactory.GetServiceBusSender(queueOrTopicName);
+        await sender.SendMessageAsync(serviceBusMessage, cancellationToken);
     }
 
     /// <inheritdocs/>
@@ -52,7 +53,8 @@ public class ServiceBusService : IServiceBusService
             serviceBusMessage.ScheduledEnqueueTime = DateTimeOffset.UtcNow.Add(delay.Value);
         }
 
-        await _serviceBusFactory.GetServiceBusSender(queueOrTopicName).SendMessageAsync(serviceBusMessage, cancellationToken);
+        var sender = _serviceBusFactory.GetServiceBusSender(queueOrTopicName);
+        await sender.SendMessageAsync(serviceBusMessage, cancellationToken);
     }
 
     /// <inheritdocs/>

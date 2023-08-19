@@ -1,3 +1,3 @@
 global using Xunit;
-global using AutoFixture.AutoNSubstitute;
-global using NSubstitute;
+global using AutoFixture.AutoMoq;
+global using Moq;
