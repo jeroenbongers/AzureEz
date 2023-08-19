@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureEz.ServiceBus", "src\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2BD9A100-595A-4DEE-8592-3B59AD2F200D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureEz.ServiceBus.UnitTests", "src\AzureEz.ServiceBus.UnitTests\AzureEz.ServiceBus.UnitTests.csproj", "{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +16,13 @@ Global
 		{508D7B7E-F9E2-48A9-995B-D76805D01AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{508D7B7E-F9E2-48A9-995B-D76805D01AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{508D7B7E-F9E2-48A9-995B-D76805D01AD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{508D7B7E-F9E2-48A9-995B-D76805D01AD2} = {2BD9A100-595A-4DEE-8592-3B59AD2F200D}
+		{A9C5EA3A-FA53-47CD-9CDA-D7EFD3DC856F} = {2BD9A100-595A-4DEE-8592-3B59AD2F200D}
 	EndGlobalSection
 EndGlobal
